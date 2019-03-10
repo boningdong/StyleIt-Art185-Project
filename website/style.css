@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Antique;
+    src: url(./fonts/ANTQUAB.TTF);
+}
+
+
+.page-hero {
+    height: 16rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+   
+}
+
+.page-hero-title {
+    font-family: Antique;
+    color: aliceblue;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #050505
+}
+
+.page-hero-subtitle {
+    font-family: Antique;
+    font-size: 1.2rem;
+    color: rgb(187, 187, 187);
+    text-shadow: 2px 2px #1d1212;
+}
+
+.bg-navbar {
+    background: rgb(26, 26, 26);
+}
+
+.img-view {
+    object-fit: cover;
+}
+
+.img-result-view {
+    object-fit: cover;
+    width: 38em;
+    height: 38rem;
+    border-radius: 0.5rem;
+}
