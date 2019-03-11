@@ -43,11 +43,11 @@
                         <p class="card-text">Upload the image will be stylized. Click the 'select Image' button first to select a image file. Then click upload.</p>
                         <div class="input-group my-3">
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary ">Select Image</button>
+                                <button id="content-sel-btn" class="btn btn-primary ">Select Image</button>
                             </div>
-                            <span class="input-group-text form-control" id="content-img-name"></span>
+                            <span id="content-img-name" class="input-group-text form-control"></span>
                             <div class="input-group-append">
-                                <button class="btn btn-primary">Upload</button>
+                                <button id="content-upload-btn" class="btn btn-primary">Upload</button>
                             </div>
                         </div>
                     </div>
@@ -55,17 +55,17 @@
                 
                 <!-- Style Image -->
                 <div class="card d-flex mx-auto my-5" style="width: 25rem;">
-                    <img id="content-img-view" src="./imgs/placeholder.png" alt="Original" class="card-img-top img-view" style="height: 15rem;">            
+                    <img id="style-img-view" src="./imgs/placeholder.png" alt="Original" class="card-img-top img-view" style="height: 15rem;">            
                     <div class="card-body">
                         <h5 class="card-title">Upload Style Image</h5>
                         <p class="card-text">Upload the image used as a style reference. Click the 'select Image' button first to select a image file. Then click upload.</p>
                         <div class="input-group my-3">
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary ">Select Image</button>
+                                <button id="style-sel-btn" class="btn btn-primary ">Select Image</button>
                             </div>
-                            <span class="input-group-text form-control" id="style-img-name"></span>
+                            <span id="style-img-name" class="input-group-text form-control"></span>
                             <div class="input-group-append">
-                                <button class="btn btn-primary">Upload</button>
+                                <button id="style-upload-btn" class="btn btn-primary">Upload</button>
                             </div>
                         </div>
                     </div>
@@ -79,26 +79,29 @@
                     <p class="my-3" style="line-height:1.7rem; font-size: 1.25rem;"><span class="font-weight-bold">Usage: </span>Use the tools to upload the orignal image and the style image first. Then click the 'Transfer' button to stylize your orignal image. </p>
                     
                     <div class="row px-3 py-4">
-                        <div class="btn-group btn-group-toggle d-flex" data-toggle="result-size">
+                        <div id="size-options" class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
                             <label class="btn btn-outline-primary disabled"><span class="font-weight-bold">Result Size</span></label>
                             <label class="btn btn-outline-primary active">
-                                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                <input type="radio" name="options" id="size-option-sm" autocomplete="off" value="sm" checked>
                                 Small
                             </label>
                             <label class="btn btn-outline-primary">
-                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                <input type="radio" name="options" id="size-option-lg" autocomplete="off" value="lg">
                                 Large
                             </label>        
                         </div>
-
-                        <button class="btn btn-primary d-flex ml-auto">Start Transfering</button>
+                        <button id="start-btn" class="btn btn-primary d-flex ml-auto">Start Transfering</button>
+                    </div>
+                    
+                    <div id="ctrl-alert" class="alert alert-info" role="alert">
+                        This is a secondary alert—check it out!
                     </div>
                     
 
                     
                 </div>
                 <div class="my-3">
-                    <img id="content-img-view" src="./imgs/placeholder.png" alt="Original" class="img-result-view mx-auto d-flex" style="">
+                    <img id="result-img-view" src="./imgs/placeholder.png" alt="Original" class="img-result-view mx-auto d-flex" style="">
                 </div>
                 
                 
