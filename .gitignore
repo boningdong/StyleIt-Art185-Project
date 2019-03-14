@@ -1,3 +1,5 @@
 .vscode
 notebook/
-
+__pycache__
+core_test
+/venv/
